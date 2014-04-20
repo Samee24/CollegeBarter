@@ -11,7 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
+import android.widget.RatingBar;
 
 public class List_info extends Activity {
 
@@ -23,7 +23,13 @@ public class List_info extends Activity {
 		ActionBar bar = getActionBar();
 		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#659D32")));
 		
+		RatingBar ratingBar = (RatingBar) findViewById(R.id.ratingBar);
+		
+		ratingBar.setRating((float) 4.5);
+		
+		
 		setTitle("Calculus - Stewart");
+		
 		
 		ListView listview = (ListView) findViewById(R.id.userinterest_info);
 		

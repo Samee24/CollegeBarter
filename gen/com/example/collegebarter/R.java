@@ -31,10 +31,12 @@ public final class R {
         public static final int image4=0x7f020006;
         public static final int image5=0x7f020007;
         public static final int image6=0x7f020008;
+        public static final int new_background=0x7f020009;
+        public static final int rectangle=0x7f02000a;
     }
     public static final class id {
         public static final int SignUp=0x7f08000a;
-        public static final int action_settings=0x7f080018;
+        public static final int action_settings=0x7f080019;
         public static final int blurb=0x7f080002;
         public static final int container=0x7f080007;
         public static final int email_signup=0x7f080010;
@@ -43,15 +45,16 @@ public final class R {
         public static final int interest_element=0x7f080014;
         public static final int interests_heading=0x7f080000;
         public static final int listView=0x7f080008;
-        public static final int list_info_image=0x7f080006;
+        public static final int list_info_image=0x7f080005;
+        public static final int listview_background_shape=0x7f080018;
         public static final int location=0x7f080017;
         public static final int login_button=0x7f080009;
         public static final int name_signup=0x7f08000f;
         public static final int password=0x7f08000b;
-        public static final int password2_signup=0x7f080012;
-        public static final int password_signup=0x7f080011;
+        public static final int password2_signup=0x7f080011;
+        public static final int password_signup=0x7f080012;
         public static final int ratingBar=0x7f080004;
-        public static final int request_quote=0x7f080005;
+        public static final int request_button=0x7f080006;
         public static final int seller_name=0x7f080016;
         public static final int signup_button=0x7f080013;
         public static final int signup_heading=0x7f08000e;
