@@ -8,15 +8,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.collegebarter.SingUp$PlaceholderFragment" >
 
-    <Button
-        android:id="@+id/signup_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="26dp"
-        android:text="Sign Up!" />
-
     <TextView
         android:id="@+id/signup_heading"
         android:layout_width="wrap_content"
@@ -28,41 +19,6 @@
         android:textSize="30sp" />
 
     <EditText
-        android:id="@+id/password2_signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/signup_button"
-        android:layout_alignLeft="@+id/password_signup"
-        android:layout_marginBottom="40dp"
-        android:ems="10"
-        android:hint="Confirm Password"
-        android:inputType="textPassword" >
-
-        <requestFocus />
-    </EditText>
-
-    <EditText
-        android:id="@+id/password_signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/password2_signup"
-        android:layout_alignLeft="@+id/email_signup"
-        android:layout_marginBottom="29dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword" />
-
-    <EditText
-        android:id="@+id/email_signup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/password_signup"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="36dp"
-        android:ems="10"
-        android:hint="Email" />
-
-    <EditText
         android:id="@+id/name_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -70,6 +26,46 @@
         android:layout_below="@+id/signup_heading"
         android:layout_marginTop="23dp"
         android:ems="10"
-        android:hint="Name" />
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/email_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/password_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/email_signup"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/password2_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password_signup"
+        android:layout_below="@+id/password_signup"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password2_signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="Sign Up!" />
 
 </RelativeLayout>

@@ -26,6 +26,10 @@
             android:name="com.example.collegebarter.SignUp"
             android:label="@string/title_activity_sing_up" >
         </activity>
+        <activity
+            android:name="com.example.collegebarter.List_item"
+            android:label="@string/title_activity_list_item" >
+        </activity>
     </application>
 
 </manifest>
