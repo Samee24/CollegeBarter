@@ -30,6 +30,10 @@
             android:name="com.example.collegebarter.List_item"
             android:label="@string/title_activity_list_item" >
         </activity>
+        <activity
+            android:name="com.example.collegebarter.List_info"
+            android:label="@string/title_activity_list_info" >
+        </activity>
     </application>
 
 </manifest>

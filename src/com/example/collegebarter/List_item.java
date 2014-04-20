@@ -3,15 +3,22 @@ package com.example.collegebarter;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -27,6 +34,11 @@ public class List_item extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_list_item);
+		
+		setTitle("CollegeBarter");
+		
+		ActionBar bar = getActionBar();
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#659D32")));
 
 		ListView listview = (ListView) findViewById(R.id.listView);
 		
@@ -90,25 +102,24 @@ public class List_item extends Activity {
 	
 
 		SimpleAdapter adapter = new SimpleAdapter(this, data,
-				R.layout.single_item_list, keys, ids){
-            @Override
-        public View getView(int pos, View convertView, ViewGroup parent){
-            View v = convertView;
-           
-            Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/Raleway-Regular.ttf");
-            
-            TextView nameItem = (TextView)v.findViewById(R.id.seller_name);
-            nameItem.setTypeface(tf);
-          
-            TextView nameLocation = (TextView)v.findViewById(R.id.location);
-            nameLocation.setTypeface(tf);
-         
-            return v;
-            }
-            };
+				R.layout.single_item_list, keys, ids);
+      
             
             listview.setAdapter(adapter);
             
+            
+            listview.setOnItemClickListener(new OnItemClickListener() {
+
+				@Override
+				public void onItemClick(AdapterView<?> arg0, View arg1,
+						int arg2, long arg3) {
+					// TODO Auto-generated method stub
+					
+					Intent intent = new Intent(List_item.this, List_info.class);
+					startActivity(intent);
+					
+				}
+			});
   
         
 	}

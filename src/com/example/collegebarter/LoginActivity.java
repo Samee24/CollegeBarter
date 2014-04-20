@@ -1,7 +1,10 @@
 package com.example.collegebarter;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,6 +25,10 @@ public class LoginActivity extends Activity {
 		mPasswordText = (TextView) findViewById(R.id.password);
 		mSignUpText = (TextView) findViewById(R.id.SignUp);
 		mLogInButton = (Button) findViewById(R.id.login_button);
+		
+		setTitle("Login");
+		ActionBar bar = getActionBar();
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#659D32")));
 		
 		mLogInButton.setOnClickListener(new OnClickListener() {
 			@Override

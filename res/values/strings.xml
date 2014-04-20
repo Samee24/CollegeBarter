@@ -6,5 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_sing_up">SingUp</string>
     <string name="title_activity_list_item">List_item</string>
+    <string name="title_activity_list_info">List_info</string>
 
 </resources>

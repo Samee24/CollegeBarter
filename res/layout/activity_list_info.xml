@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.collegebarter.List_info$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/interests_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/userinterest_info"
+        android:layout_alignLeft="@+id/blurb"
+        android:layout_marginBottom="31dp"
+        android:layout_marginLeft="18dp"
+        android:text="Interests"
+        android:textSize="16sp"
+        android:textStyle="normal|bold" />
+
+    <ListView
+        android:id="@+id/userinterest_info"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/blurb"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:divider="#659D32"
+        android:dividerHeight="2px"
+        android:layout_marginLeft="7dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/username_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/interests_heading"
+        android:layout_alignBottom="@+id/interests_heading"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="63dp"
+        android:text="Samee24"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username_info"
+        android:layout_below="@+id/username_info"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/request_quote"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/userinterest_info"
+        android:layout_alignLeft="@+id/ratingBar"
+        android:layout_marginBottom="27dp"
+        android:text="Request price"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/blurb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/interests_heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:gravity="center_horizontal"
+        android:text="Slightly used and scribbled on. 2007 revised edition." />
+
+    <ImageView
+        android:id="@+id/list_info_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/blurb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:gravity="center_horizontal"
+        android:src="@drawable/image0" />
+
+</RelativeLayout>
