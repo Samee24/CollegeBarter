@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.collegebarter.SingUp"
+            android:name="com.example.collegebarter.SignUp"
             android:label="@string/title_activity_sing_up" >
         </activity>
     </application>

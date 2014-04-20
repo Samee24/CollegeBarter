@@ -27,18 +27,22 @@ public final class R {
     }
     public static final class id {
         public static final int SignUp=0x7f080001;
-        public static final int action_settings=0x7f080006;
-        public static final int container=0x7f080005;
+        public static final int action_settings=0x7f08000b;
+        public static final int email_signup=0x7f080009;
         public static final int imageView1=0x7f080004;
         public static final int login_button=0x7f080000;
+        public static final int name_signup=0x7f08000a;
         public static final int password=0x7f080002;
+        public static final int password2_signup=0x7f080007;
+        public static final int password_signup=0x7f080008;
+        public static final int signup_button=0x7f080005;
+        public static final int signup_heading=0x7f080006;
         public static final int username=0x7f080003;
     }
     public static final class layout {
         public static final int activity_login=0x7f030000;
-        public static final int activity_sing_up=0x7f030001;
+        public static final int activity_sign_up=0x7f030001;
         public static final int fragment_login=0x7f030002;
-        public static final int fragment_sing_up=0x7f030003;
     }
     public static final class menu {
         public static final int login=0x7f070000;
