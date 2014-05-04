@@ -1,7 +1,9 @@
 CollegeBarter
 =============
 
-Authors: Samee Zahid
+Authors: 
+        
+         Samee Zahid
          Larry Asante Boateng
 
 An android app that makes students' lives easier by reducing their financial burden. Made at Pioneer Weekend.
